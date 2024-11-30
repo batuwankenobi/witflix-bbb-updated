@@ -80,6 +80,94 @@ header .search button {
     right: 5px;
 }
 
+section {
+    padding: 20px;
+}
+
+.movie-details {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.movie-poster {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.movie-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.movie-info button {
+    background-color: #ff5f5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.movies-list {
+    margin-bottom: 40px;
+}
+
+.movies-list h2 {
+    margin-bottom: 10px;
+}
+
+.movie-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1 1 calc(33.33% - 20px);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-card button {
+    background-color: #ff5f5f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 header .notifications,
 header .profile {
     background: none;
