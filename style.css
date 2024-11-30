@@ -79,3 +79,13 @@ header .search button {
     position: absolute;
     right: 5px;
 }
+
+header .notifications,
+header .profile {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #333;
+}
