@@ -35,3 +35,47 @@ header nav ul li a {
     color: #000;
     font-weight: bold;
 }
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+header .search input {
+    padding: 5px 30px 5px 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 16px;
+    background-color: #fff;
+    outline: none;
+}
+
+header .search input::before {
+    content: "\1F50D";
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+header .search button {
+    background-color: #ff5f5f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+}
