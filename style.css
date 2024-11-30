@@ -265,3 +265,61 @@ section {
     margin-top: 10px;
     cursor: pointer;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ff5f5f;
+    text-decoration: none;
+}
+
+
+/* Media Queries for Mobile (iPhone 14) */
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    header .header-right {
+        margin-top: 20px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    section {
+        padding: 10px;
+    }
+    .movie-details {
+        flex-direction: column;
+    }
+    .movie-info h1 {
+        font-size: 20px;
+    }
+    .movie-poster {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .movie-info {
+        width: 100%;
+    }
+    .movies-list h2 {
+        font-size: 20px;
+    }
+    .movie-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .movie-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
