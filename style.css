@@ -1,14 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     background-color: #f4f4f4;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20;
+    padding: 30px;
+    /* witflix layer boyutu */
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center;
@@ -62,7 +63,7 @@ header .search input {
 
 header .search input::before {
     content: "\1F50D";
-    font-size: 40px;
+    font-size: 20px;
     position: absolute;
     right: 15px;
     top: 50%;
@@ -78,158 +79,52 @@ header .search button {
     padding: 5px 10px;
     border-radius: 50%;
     position: absolute;
-    right: 5px;
+    right: 15px;
 }
 
 section {
     padding: 20px;
 }
 
-.movie-poster {
-    width: 3px;
-    height: 6px;
+.age-restriction {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Şeffaf arka plan */
+    color: white;
+    /* Yazı rengi beyaz */
+    padding: 5px 10px;
+    /* Daha küçük iç boşluk */
+    border-radius: 50%;
+    /* Yuvarlak yapmak için */
+    font-weight: bold;
+    font-size: 12px;
+    /* Küçük font boyutu */
+    text-align: center;
+    line-height: 20px;
+    /* Dairenin içine düzgün yerleşmesi için daha küçük line-height */
+    border: 2px solid white;
+    /* Beyaz kenarlık */
 }
 
-.movie-details {
-    display: flex;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
 .movie-poster {
-    width: 50%;
+    width: 97vw;
+    height: 30vw;
     margin-right: 20px;
 }
 
-.movie-poster img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
 .movie-info {
     flex: 1;
 }
 
 .movie-info h1 {
-    font-size: 24px;
+    font-size: 46px;
     margin-bottom: 10px;
 }
 
 .movie-info p {
     font-size: 16px;
     color: #333;
-    margin-bottom: 5px;
-}
-
-.movie-info button {
-    background-color: #ff5f5f;
-    color: white;
-    padding: 20px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    font-size: 16px;
-    margin-top: 15px;
-}
-
-.movies-list {
-    margin-bottom: 40px;
-}
-
-.movies-list h2 {
     margin-bottom: 10px;
-}
-
-.movie-cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.movie-card {
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    width: 200px;
-    text-align: center;
-    margin-bottom: 20px;
-    flex: 1 1 calc(33.33% - 20px);
-}
-
-.movie-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.movie-card button {
-    background-color: #ff5f5f;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ header .notifications,
-header .profile {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: 20px;
-    font-size: 20px;
-    color: #333;
-}
-
-section {
-    padding: 20px;
-}
-
-.movie-details {
-    display: flex;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.movie-poster {
-    width: 70vw;
-    /* Sayfa genişliği kadar genişlik */
-    height: 40vw;
-    /* Yükseklik orantılı kalır */
-    display: block;
-    /* Blok eleman olarak davranır */
-    object-fit: cover;
-    /* Resmin doğru şekilde kesilmesini ve yayılmasını sağlar */
-}
-
-.movie-card img {
-    width: 10%;
-    /* Kartın genişliğini doldurur */
-    height: 150px;
-    /* Tüm resimler aynı yükseklikte olur */
-    object-fit: cover;
-    /* Resimlerin oranlarını bozmadan alanı doldurur */
-    border-radius: 8px;
-}
-
-.movie-info {
-    flex: 1;
-}
-
-.movie-info h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.movie-info p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
 }
 
 .movie-info button {
@@ -239,46 +134,51 @@ section {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    font-size: 16px;
-    margin-top: 15px;
+    font-size: 24px;
+    margin-top: 10px;
 }
 
 .movies-list {
-    margin-bottom: 40px;
+    margin-bottom: 180px;
 }
 
 .movies-list h2 {
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 .movie-cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .movie-card {
     background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    width: 20px;
+    padding: 50;
+    border-radius: 18px;
+    width: 300px;
+    height: 400px;
+    /* film kutucuk boyutu */
     text-align: center;
     margin-bottom: 20px;
 }
 
 .movie-card img {
-    /*film afişi boyut ayarlama*/
-    width: 40%;
-    height: auto;
+    width: 100%;
+    /* Ensures images fill the space */
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
 .movie-card button {
     background-color: #ff5f5f;
     color: white;
-    padding: 5px 10px;
+    padding: 15px 40px;
+    border-radius: 10%;
     border: none;
-    margin-top: 10px;
+    margin-top: 40px;
     cursor: pointer;
 }
 
@@ -332,6 +232,7 @@ footer a {
     }
     .movie-card {
         width: 100%;
+        /* Adjusted for better fit on mobile */
         margin-bottom: 10px;
     }
     .movie-cards {
