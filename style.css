@@ -85,6 +85,11 @@ section {
     padding: 20px;
 }
 
+.movie-poster {
+    width: 3px;
+    height: 6px;
+}
+
 .movie-details {
     display: flex;
     background-color: white;
@@ -94,7 +99,7 @@ section {
 }
 
 .movie-poster {
-    width: 30%;
+    width: 50%;
     margin-right: 20px;
 }
 
@@ -122,7 +127,7 @@ section {
 .movie-info button {
     background-color: #ff5f5f;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border: none;
     cursor: pointer;
     border-radius: 20px;
@@ -163,7 +168,7 @@ section {
 .movie-card button {
     background-color: #ff5f5f;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: none;
     margin-top: 10px;
     cursor: pointer;
@@ -192,8 +197,14 @@ section {
 }
 
 .movie-poster {
-    width: 30%;
-    margin-right: 20px;
+    width: 70vw;
+    /* Sayfa genişliği kadar genişlik */
+    height: 40vw;
+    /* Yükseklik orantılı kalır */
+    display: block;
+    /* Blok eleman olarak davranır */
+    object-fit: cover;
+    /* Resmin doğru şekilde kesilmesini ve yayılmasını sağlar */
 }
 
 .movie-poster img {
@@ -220,7 +231,7 @@ section {
 .movie-info button {
     background-color: #ff5f5f;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border: none;
     cursor: pointer;
     border-radius: 20px;
