@@ -207,10 +207,14 @@ section {
     /* Resmin doğru şekilde kesilmesini ve yayılmasını sağlar */
 }
 
-.movie-poster img {
-    width: 100%;
-    height: auto;
-    border-radius: 24px;
+.movie-card img {
+    width: 10%;
+    /* Kartın genişliğini doldurur */
+    height: 150px;
+    /* Tüm resimler aynı yükseklikte olur */
+    object-fit: cover;
+    /* Resimlerin oranlarını bozmadan alanı doldurur */
+    border-radius: 8px;
 }
 
 .movie-info {
@@ -257,14 +261,14 @@ section {
     background-color: white;
     padding: 10px;
     border-radius: 8px;
-    width: 200px;
+    width: 20px;
     text-align: center;
     margin-bottom: 20px;
-    flex: 1 1 calc(33.33% - 20px);
 }
 
 .movie-card img {
-    width: 100%;
+    /*film afişi boyut ayarlama*/
+    width: 40%;
     height: auto;
     border-radius: 8px;
 }
