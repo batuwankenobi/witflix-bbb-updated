@@ -199,12 +199,17 @@ footer a {
 
 @media only screen and (max-width: 768px) {
     header {
+        width: 30%;
         flex-direction: column;
         align-items: flex-start;
+        padding: 10px;
+        /* Ekleme: header'a padding ekleyerek daha derli toplu görünmesini sağladım */
     }
     header nav ul {
         flex-direction: column;
         margin-top: 10px;
+        padding-left: 0;
+        /* Ekleme: UL öğesinin sol padding'ini sıfırlayarak düzgün hizalama */
     }
     header .header-right {
         margin-top: 20px;
@@ -216,9 +221,13 @@ footer a {
     }
     .movie-details {
         flex-direction: column;
+        align-items: center;
+        /* Ekleme: Daha düzenli bir görünüm için içeriklerin ortalanması */
     }
     .movie-info h1 {
         font-size: 20px;
+        margin-bottom: 10px;
+        /* Ekleme: H1 başlığının altına boşluk ekleyerek daha düzenli görünmesini sağladım */
     }
     .movie-poster {
         width: 100%;
@@ -226,17 +235,28 @@ footer a {
     }
     .movie-info {
         width: 100%;
+        padding: 10px;
+        /* Ekleme: Movie info'ya padding ekleyerek daha estetik bir görünüm */
+        box-sizing: border-box;
+        /* Ekleme: padding'i kutu modeline dahil etmek için */
     }
     .movies-list h2 {
         font-size: 20px;
+        margin-bottom: 15px;
+        /* Ekleme: Başlık ile içerik arasına boşluk ekledim */
     }
     .movie-card {
         width: 100%;
-        /* Adjusted for better fit on mobile */
         margin-bottom: 10px;
     }
     .movie-cards {
         flex-direction: column;
         gap: 10px;
+    }
+    /* Ekstra Stil: Movie card hover efekti eklenebilir */
+    .movie-card:hover {
+        transform: scale(1.05);
+        /* Hover efekti ile film kartları daha interaktif hale gelir */
+        transition: transform 0.3s ease;
     }
 }
